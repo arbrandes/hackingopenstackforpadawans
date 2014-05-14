@@ -1,2 +1,2 @@
-# Giving back to the community
+# Giving back
 

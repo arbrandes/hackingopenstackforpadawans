@@ -1,7 +1,7 @@
-# What You'll See Here
+# What You'll Get
 
 
-## How to launch Devstack for comfortable hacking
+## How to set up a comfortable environment
 
 
 ## How to hack OpenStack
@@ -10,7 +10,7 @@
 ## How to contribute your patch
 
 
-### And a little about me
+### And a little about me...
 
 
 # Adolfo Brandes
