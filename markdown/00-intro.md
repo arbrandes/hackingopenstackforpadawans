@@ -16,8 +16,10 @@
 # Adolfo Brandes
 
 
-### Stacker and trainer
+### Developer, stacker, and trainer
 
-### Barefoot runner and computer geek
+### Barefoot runner and geek
 
 ### Senior Consultant at hastexo
+
+### @arbrandes
