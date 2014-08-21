@@ -3,9 +3,9 @@
 
 ## What to do?
 
-### Let's choose an [easy](https://bugs.launchpad.net/horizon/+bug/1302256) bug.
+### Let's choose an [easy](https://bugs.launchpad.net/horizon/+bug/1329571) bug.
 
-Note: This bug has an assignee who promised a patch.
+Note: This bug is on the low-hanging-fruit list!
 
 
 ## Where to edit the code?
@@ -18,6 +18,7 @@ Better configure devstack to use a standalone repo!
     HORIZON_REPO=/home/devstack/horizon/
     HORIZON_BRANCH=master
 
+    $ rm -fr /opt/stack/horizon
     $ cd devstack
     $ ./stack.sh
 
@@ -33,7 +34,7 @@ Better configure devstack to use a standalone repo!
 
 ## Create a topic branch
 
-    $ git checkout -b bug/1302256
+    $ git checkout -b bug/1329571
 
 
 ## Edit the code
@@ -43,13 +44,13 @@ Better configure devstack to use a standalone repo!
 
     $ git commit
     ...
-    Show default text for image format
+    Validate security group port properly
 
-    This changes the default Horizon settings so that the list of image formats
-    starts with an entry that uses default text in accordance with other
-    dialogs.
+    This changes security group port validation so it matches what the help
+    popup says, allowing only ports between 1 and 65535. (As opposed to -1 and
+    65535, as before).
 
-    Closes-Bug: #1302256
+    Closes-Bug: #1329571
     ...
 
 

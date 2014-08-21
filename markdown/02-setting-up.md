@@ -6,6 +6,12 @@
  `devstack.ova`
 
 
+## Create a host-only network
+
+    IPv4 Address: 192.168.122.1
+    Ipv4 Network Mask: 255.255.255.0
+
+
 ## Import the appliance
 
  `File > Import Appliance`
@@ -16,7 +22,23 @@
 
 ## Connect to it
 
-    $ ssh -p 12210 devstack@localhost
+    $ ssh devstack@192.168.122.100
+
+password: **devstack**
+
+
+## local.conf
+
+    $ cd devstack
+    $ cp samples/local.conf .
+    $ vim local.conf
+
+Only this was changed:
+
+    ADMIN_PASSWORD=admin
+    HOST_IP=192.168.122.100
+    API_RATE_LIMIT=False
+    OFFLINE=True
 
 
 ## Devstack!
