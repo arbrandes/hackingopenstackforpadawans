@@ -3,4 +3,4 @@
 	url = git://github.com/hakimel/reveal.js
 [submodule "qrcodejs"]
 	path = qrcodejs
-	url = git://github.com/davidshimjs/qrcodejs
+	url = https://github.com/davidshimjs/qrcodejs.git
