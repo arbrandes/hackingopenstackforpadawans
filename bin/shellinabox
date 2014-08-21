@@ -14,6 +14,6 @@ shellinaboxd \
 	--disable-ssl \
 	--port=4242 \
 	--css=$dir/../css/shellinabox.css \
-	--service /:$USER:$USER:HOME:"screen -xR"
+	--service /:$USER:$USER:HOME:"screen -xRS shellinabox"
 
 echo "shellinaboxd started in background. Shutdown with \"kill -TERM `cat $pidfile`\"." >&2
