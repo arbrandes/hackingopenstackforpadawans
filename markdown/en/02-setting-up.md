@@ -1,30 +1,23 @@
 # Setting it up
 
 
-## Copy the devstack appliance
+## Vagrant
 
- `devstack.ova`
+    $ vagrant init ubuntu/trusty64
 
-
-## Create a host-only network
-
-    IPv4 Address: 192.168.122.1
-    Ipv4 Network Mask: 255.255.255.0
+Note: The easiest way to start is to use an Ubuntu 14.04 Vagrant box.
 
 
-## Import the appliance
+## Prepare the box
 
- `File > Import Appliance`
+    $ vagrant up
+    $ vagrant ssh
+    $ apt-get install git git-review python-tox
 
 
-## Boot it up
+## Install Devstack
 
-
-## Connect to it
-
-    $ ssh devstack@192.168.122.100
-
-password: **devstack**
+    $ git clone https://git.openstack.org/openstack-dev/devstack
 
 
 ## local.conf

@@ -1,21 +1,21 @@
-# Get hacking!
+# Comece a programar!
 
 
-## What to do?
+## O que fazer?
 
-### Let's choose an [easy](https://bugs.launchpad.net/horizon/+bug/1329571) bug.
+### Escolha um bug [fácil](https://bugs.launchpad.net/horizon/+bug/1329571).
 
-Note: This bug is on the low-hanging-fruit list!
+Note: Este bug está na lista de "low-hanging-fruit".
 
 
-## Where to edit the code?
+## Onde editar?
 
-Better configure devstack to use a standalone repo!
+Melhor configurar o devstack para usar um repositório local:
 
-    $ git clone https://github.com/openstack/horizon.git
+    $ cp -a /opt/stack/horizon ~/
     $ vim ~/devstack/local.conf
 
-    HORIZON_REPO=/home/devstack/horizon/
+    HORIZON_REPO=/home/vagrant/horizon/
     HORIZON_BRANCH=master
 
     $ rm -fr /opt/stack/horizon
@@ -23,7 +23,7 @@ Better configure devstack to use a standalone repo!
     $ ./stack.sh
 
 
-## Configure git for your user
+## Configure o git para o seu usuário
 
     $ git config --global user.name "Firstname Lastname"
     $ git config --global user.email "your_email@youremail.com"
@@ -32,12 +32,12 @@ Better configure devstack to use a standalone repo!
     $ git review -s
 
 
-## Create a topic branch
+## Crie um topic branch
 
     $ git checkout -b bug/1329571
 
 
-## Edit the code
+## Modifique o código
 
 
 ## Commit!
@@ -54,9 +54,9 @@ Better configure devstack to use a standalone repo!
     ...
 
 
-## Test!
+## Teste!
 
-### Unit tests
+### Testes unitários
 
     $ cd ~/horizon
     $ ./run_tests.sh
@@ -70,8 +70,8 @@ Better configure devstack to use a standalone repo!
     $ nosetests -v tempest
 
 
-## Failures?
+## Erros?
 
-Edit the code and
+Modifique o código e...
 
     $ git commit -a --amend
