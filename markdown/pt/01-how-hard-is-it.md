@@ -49,7 +49,7 @@ um blueprint.
 
 ## Assine o CLA
 ### Crie uma conta no [Launchpad](https://launchpad.net/+login)
-### [Junte-se](https://blueprints.launchpad.net/openstack) a Fundação
+### [Junte-se](https://www.openstack.org/join/) a Fundação
 ### Registre-se em [review.openstack.org](https://review.openstack.org/)
 ### Concorde com o [CLA](https://review.openstack.org/#/settings/agreements)
 ### (opcional) Concorde com o [CLA Corporativo](https://secure.echosign.com/public/hostedForm?formid=56JUVGT95E78X5)

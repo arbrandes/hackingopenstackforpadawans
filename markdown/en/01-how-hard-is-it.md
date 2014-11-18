@@ -51,7 +51,7 @@ requires a corresponding blueprint.
 
 ## Sign the CLA
 ### Create [Launchpad](https://launchpad.net/+login) account
-### [Join](https://blueprints.launchpad.net/openstack) the Foundation
+### [Join](https://www.openstack.org/join/) the Foundation
 ### Sign in to [review.openstack.org](https://review.openstack.org/)
 ### Agree to the [CLA](https://review.openstack.org/#/settings/agreements)
 ### (optional) Agree to the [Corporate CLA](https://secure.echosign.com/public/hostedForm?formid=56JUVGT95E78X5)
