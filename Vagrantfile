@@ -12,9 +12,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Forward our agent
   config.ssh.forward_agent = true
 
-  # Disable shared folder
-  config.vm.synced_folder '.', '/vagrant', disabled: true
-
   config.vm.provider :virtualbox do |vb|
     vb.memory = ram
     vb.gui = true
@@ -26,10 +23,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
 
   config.vm.define "devstack" do |machine|
-    machine.vm.provision "shell", inline: <<EOF
-apt-get -y install git git-review python-tox
-git clone https://git.openstack.org/openstack-dev/devstack
-chown -R vagrant:vagrant devstack
-EOF
+    machine.vm.network :private_network, ip: "192.168.122.100"
+    machine.vm.hostname = "devstack"
+    machine.vm.provision "shell", path: "provision-root.sh"
   end
 end
